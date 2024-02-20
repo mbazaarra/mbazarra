@@ -9,11 +9,13 @@ public class MovieDriver {
 
         Movie movie = new Movie();
        
-
+        
+        
+       
         
         System.out.println("Enter the name of a movie: ");
-        String title = keyboard.nextLine();
-        movie.setTitle(title);
+        String name = keyboard.nextLine();
+        movie.setTitle(name);
 
         System.out.println("Enter the rating of movie: ");
         String rating = keyboard.nextLine();
@@ -21,8 +23,8 @@ public class MovieDriver {
 
 
         System.out.println("Enter number of tickets sold for this movie");
-        int movies_sold = keyboard.nextInt();
-        movie.setSoldTickets(movies_sold);
+        int sold = keyboard.nextInt();
+        movie.setSoldTickets(sold);
 
         
         
@@ -30,6 +32,7 @@ public class MovieDriver {
         System.out.println("\nGoodbye");
         keyboard.close();
     }
+    
 
 	
 }
